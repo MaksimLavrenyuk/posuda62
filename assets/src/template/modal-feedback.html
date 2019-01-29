@@ -1,0 +1,37 @@
+<div class="modal fade" id="modalFeedback" tabindex="-1" role="dialog" aria-labelledby="modalFeedback" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modalFeedback">Свяжитесь с нами</h4>
+            </div>
+            <div class="modal-body">
+                <form id="FeedbackForm" name="Feedback" class="modal-form" action="modal-feedback.php" method="post" autocomplete="on">
+                  <input name="title" type="hidden" value="Обратная связь с хрустального мира">
+                  <ul class="modal-form__list">
+                    <li class="modal-form__item">
+                      <h5 class="modal-form__input-caption">Имя</h5>
+                      <input name="name" type="text" class="modal-form__input" autocomplete="on" required placeholder="Как Вас зовут?">
+                    </li>
+                    <li class="modal-form__item">
+                      <h5 class="modal-form__input-caption">Электронный адрес</h5>
+                      <input name="email" type="email" class="modal-form__input" autocomplete="on" required placeholder="Как у вас E-Mail?">
+                    </li>
+                    <li class="modal-form__item">
+                      <h5 class="modal-form__input-caption">Телефон</h5>
+                      <input name="phone" type="text" class="modal-form__input" autocomplete="off"  placeholder="Ваш контактный телефон? (не обязательно)">
+                    </li>
+                    <li class="modal-form__item">
+                      <h5 class="modal-form__input-caption">Сообщение</h5>
+                      <textarea name="message" rows="4" class="modal-form__input" autocomplete="off" placeholder="Текст письма"></textarea>
+
+                    </li>
+                  </ul>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="FeedbackSubmit" type="submit" form="FeedbackForm" value="submit" class="btn btn-primary btn-modal">Отправить</button>
+                <button type="button" class="btn btn-primary btn-modal btn-modal_close" data-dismiss="modal">Отмена</button>
+            </div>
+        </div>
+    </div>
+</div>

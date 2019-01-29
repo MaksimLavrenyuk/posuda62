@@ -1,0 +1,29 @@
+.for-customers {
+	border-top: 1px solid $border-grey;
+	background-color: $white;
+	margin-top: 79px;
+
+}
+
+
+.for-customers__caption {
+	font-size: 1.5rem;
+	font-family: $font-family-secondary;
+
+}
+
+.for-customers__content {
+	display: flex;
+	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	justify-content: space-around;
+}
+
+
+.for-customers__btn {
+	height: 48px;
+}
+
+@import "for-customers-mediaqueries";
+

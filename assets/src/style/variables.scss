@@ -1,0 +1,94 @@
+//	СВОИ ПЕРЕМЕННЫЕ	
+
+//время анимации
+$animation-time: 0.3s;
+
+
+// ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ
+
+// цвет текста страницы
+$body-color: #212121;
+
+// Ширина контейнера
+$container-max-widths: (
+  xl: 1158px
+);
+
+//Цвета
+$primary: rgb(89, 161, 217);
+$primary-strong: #0a80db;
+$primary-hover: #3389c7;
+$secondary: rgb(250, 85, 40);
+$grey: rgb(117, 117, 117);
+$border-grey: rgb(206, 206, 206);
+$black: #212121;
+$footer-bg: rgb(51, 51, 51);
+// box-shadow
+$box-shadow-fix: 0 28px 10px -20px rgba(0,0,0,.56);
+$box-shadow-fix-two: 0 22px 30px -11px rgba(0,0,0,.56);
+$h-bg: #d6d6d6;
+
+
+
+//Текст
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-secondary: 'Open Sans', sans-serif;
+
+//Кнопки
+
+$btn-border-radius: 0;
+$btn-focus-box-shadow: none;
+$btn-transition: $animation-time;
+
+//Кнопка с выпадающим меню
+$dropdown-min-width: 100%;
+$dropdown-border-radius:0;
+$dropdown-spacer: 0px;
+
+$dropdown-border-color: $border-grey;
+
+
+
+//навигация хедера
+
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+
+$nav-link-padding-y: 1rem;
+$navbar-nav-link-padding-x: 1.375rem;
+
+
+// модальное окно
+$modal-content-border-radius: 2px;
+$modal-md: 456px;
+$modal-sm: 290px;
+$modal-inner-padding: 0rem 1.25rem 1.25rem 1.25rem;
+
+
+//Хлебные крошки
+
+$breadcrumb-bg: transparent;
+$breadcrumb-active-color: $black;
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+ $breadcrumb-margin-bottom: 2rem;
+
+//Пагинация
+
+$pagination-disabled-bg: transparent;
+$pagination-disabled-border-color: transparent;
+$pagination-bg: transparent;
+$pagination-border-color: transparent;
+$pagination-border-width: 0px;
+$pagination-color: $black;
+$pagination-hover-color: $black;
+$pagination-focus-outline: none;
+$pagination-focus-box-shadow: none;
+$pagination-padding-y: 0.4375rem;
+ $pagination-padding-x: 0.75rem;
+
+
+
+// таблицы
+$table-bg: #fff;
+$table-border-color: $border-grey;

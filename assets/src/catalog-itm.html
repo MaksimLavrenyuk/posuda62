@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
+    <title>Карточка товара</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+	<div id="page-preloader"><span class="spinner"></span></div>
+	<div class="snap-drawers">
+		<div class="snap-drawer snap-drawer-left">
+			<!--Импортируем мобильное меню-->
+			//= template/mobile-menu.html
+			<!--/Импортируем Мобильное меню-->
+		</div>
+	</div>
+	<div id="content" class="snap-content">
+	<div class="page-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!--Импортируем хлебные крошки-->
+					//= template/breadcrumb.html
+					<!--/Импортируем хлебные крошки-->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="row">
+						<div class="col-lg-4 col-md-5 col-sm-12">
+							<div class="catalog-item-carousel-container" data-snap-ignore="true">
+								<div class="catalog-item-images_big">
+									<div class="catalog-item-images__item">
+										<img class="img-fluid" src="img/catalog-item-img-big.jpg" alt="каталог">
+									</div>
+									<div class="catalog-item-images__item">
+										<img class="img-fluid" src="img/catalog-item-img-big.jpg" alt="каталог">
+									</div>
+									<div class="catalog-item-images__item">
+										<img class="img-fluid" src="img/catalog-item-img-big.jpg" alt="каталог">
+									</div>
+									<div class="catalog-item-images__item">
+										<img class="img-fluid" src="img/catalog-item-img-big.jpg" alt="каталог">
+									</div>
+								</div>
+								<div class="catalog-item-images_sm">
+									<div class="catalog-item-images_sm-carousel">
+										<div class="catalog-item-images__item">
+											<img class="img-fluid" src="img/catalog-item-img-sm.jpg" alt="каталог">
+										</div>
+										<div class="catalog-item-images__item">
+											<img class="img-fluid" src="img/catalog-item-img-sm-2.jpg" alt="каталог">
+										</div>
+										<div class="catalog-item-images__item">
+											<img class="img-fluid" src="img/catalog-item-img-sm-3.jpg" alt="каталог">
+										</div>
+										<div class="catalog-item-images__item">
+											<img class="img-fluid" src="img/catalog-item-img-sm-3.jpg" alt="каталог">
+										</div>
+									</div>			
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-8 col-md-7 col-sm-12">
+							<div class="catalog-item-description">
+								<h1 class="catalog-item-description__caption">Блюдо с лопаткой для торта</h1>
+								<div class="catalog-item-description__content">
+									<div class="catalog-item-main-info">
+										<div class="table-info table-responsive" data-snap-ignore="true">
+											<table class="table table-sm table-hover">
+												<tbody>
+												    <tr>
+												      <th scope="row">Производитель</th>
+												      <td>Luminarc</td>
+												    </tr>
+												    <tr>
+												      <th scope="row">Страна</th>
+												      <td>Франция</td>
+												    </tr>
+												    <tr>
+												      <th scope="row">Материал</th>
+												      <td>Фарфор</td>
+												    </tr>
+												    <tr>
+												      <th scope="row">Серия</th>
+												      <td>Scottish new year</td>
+												    </tr>
+												    <tr>
+												      <th scope="row">Артикул</th>
+												      <td>2313514465464654654</td>
+												    </tr>
+												    <tr>
+												      <th scope="row">Код</th>
+												      <td>12345</td>
+												    </tr>
+											  </tbody>
+											</table>
+										</div>
+										<p class="catalog-item-main-info__text">
+											Набор посуды из 2 предметов: блюдо для торта и лопатка - для сервировки "сладкого" стола к заепитию. Посуда выполнена из фарфора, нарядно оформлена.
+										</p>
+										<p class="catalog-item-main-info__text catalog-item-main-info__text_more catalog-item-main-info__text_grey">
+											Состав комплекта: <span class="catalog-item-main-info__text_black">блюдо, лопатка</span>.
+										</p>
+										<p class="catalog-item-main-info__text catalog-item-main-info__text_more catalog-item-main-info__text_grey">
+											Размеры: <span class="catalog-item-main-info__text_black">-блюдо: диаметр 270 мм, глубина 30 мм. - лопатка: 240x60мм</span>.
+										</p>
+									</div>
+									<div class="catalog-item-to-order">
+										<h3 class="catalog-item-to-order__price">420<span> руб.</span><small class="catalog-item-to-order__price_sale">480<span> руб.</span></small></h3>
+										<form id="orderGoods" name="order" class="order-form" method="post" action="order.php" autocomplete="off">
+											<div class="order-form-number">
+												<button data-order-action="increase" type="button" class="order-form-number__btn btn btn-primary">-</button>
+												<input data-order="num" name="orderNum" type="text" class="order-form-number__input" value="1">
+												<button data-order-action="reduce" type="button" class="order-form-number__btn btn btn-primary">+</button>
+											</div>
+											<div class="order-form-buttons">
+												<button id="orderSubmit" type="submit" href="#" class="order-form__button btn-separator btn btn-primary">
+													<span class="btn-separator__text">Купить</span>
+													<div class="btn-separator__img"><i class="icon icon_basket"></i></div>
+												</button>
+												<button type="button" class="order-form__button btn-separator btn-separator_white btn btn-primary">
+													<span class="btn-separator__text">В список желаний</span>
+													<div class="btn-separator__img">
+														<svg  viewBox="0 0 645 585" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
+															<path d="M 297.29747,550.86823 C 283.52243,535.43191 249.1268,505.33855 220.86277,483.99412 C 137.11867,420.75228 125.72108,411.5999 91.719238,380.29088 C 29.03471,322.57071 2.413622,264.58086 2.5048478,185.95124 C 2.5493594,147.56739 5.1656152,132.77929 15.914734,110.15398 C 34.151433,71.768267 61.014996,43.244667 95.360052,25.799457 C 119.68545,13.443675 131.6827,7.9542046 172.30448,7.7296236 C 214.79777,7.4947896 223.74311,12.449347 248.73919,26.181459 C 279.1637,42.895777 310.47909,78.617167 316.95242,103.99205 L 320.95052,119.66445 L 330.81015,98.079942 C 386.52632,-23.892986 564.40851,-22.06811 626.31244,101.11153 C 645.95011,140.18758 648.10608,223.6247 630.69256,270.6244 C 607.97729,331.93377 565.31255,378.67493 466.68622,450.30098 C 402.0054,497.27462 328.80148,568.34684 323.70555,578.32901 C 317.79007,589.91654 323.42339,580.14491 297.29747,550.86823 z" />
+														</svg>
+													</div>
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="catalog-item-tabs">
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="characteristic-tab" data-toggle="tab" href="#characteristic" role="tab" aria-controls="characteristic" aria-selected="true">Характеристики</a>
+								    </li>
+								    <li class="nav-item">
+								    	<a class="nav-link" id="comment-tab" data-toggle="tab" href="#comment" role="tab" aria-controls="comment" aria-selected="false">Комментарий</a>
+								  	</li>
+								</ul>
+								<div class="tab-content" id="myTabContent">
+								    <div class="tab-pane fade show active" id="characteristic" role="tabpanel" aria-labelledby="characteristic-tab">
+								    	<ul class="catalog-item-characteristic">
+								    		<li class="catalog-item-characteristic__item">
+								    			<span class="catalog-item-characteristic__name">Информация о товаре</span>
+								    			<span class="catalog-item-characteristic__value">бла бла бла</span>
+								    		</li>
+								    		<li class="catalog-item-characteristic__item">
+								    			<span class="catalog-item-characteristic__name">Информация о товаре</span>
+								    			<span class="catalog-item-characteristic__value">бла бла бла</span>
+								    		</li>
+								    		<li class="catalog-item-characteristic__item">
+								    			<span class="catalog-item-characteristic__name">Информация о товаре</span>
+								    			<span class="catalog-item-characteristic__value">бла бла бла</span>
+								    		</li>
+								    		<li class="catalog-item-characteristic__item">
+								    			<span class="catalog-item-characteristic__name">Информация о товаре</span>
+								    			<span class="catalog-item-characteristic__value">бла бла бла</span>
+								    		</li>
+								    	</ul>
+								    </div>
+								    <div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="comment-tab">
+								    	<form id="commentForm" name="commentForm" class="comment-form" method="post" action="comment.php">
+								    		<input name="commentTitle" type="hidden" value="Коментарий с товара">
+								    		<textarea class="comment-form__message" name="comment"  rows="4" placeholder="Ваш комментарий" required></textarea>
+								    		<button type="submit" class="comment-form__submit btn btn-primary">отправить</button>
+								    	</form>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row page-section">
+						<section class="col-12">
+							<h2 class="page-h2">
+								<span  class="page-h2__text"><i class="page-h2-icon">- </i>Вы не забыли купить?</span>
+								<div class="page-arrow-block catalog-more-items-nav">
+									<button class="page-arrow catalog-more-items-nav_left"><i class="icon icon_arrow-left"></i></button>
+									<button class="page-arrow catalog-more-items-nav_right"><i class="icon icon_arrow-right"></i></button>
+								</div>
+							</h2>
+							<div class="catalog-more-items page-card-items owl-carousel owl-theme" data-snap-ignore="true">
+								<div class="page-card">
+									<div class="page-card__img">
+										<div class="page-card__popular popular"><i class="icon icon_like"></i></div>
+										<img class="img-fluid" src="img/page-card-img-1.jpg" alt="Картинка">
+										<div class="card-numb"><span class="card-numb__text">Код: <span>12345</span></span></div>
+									</div>
+									<div class="page-card__body">
+										<span class="page-card__vendor-code">Арт. <span>1234567890111213141516178</span></span>
+										<a href="#" class="page-card__name">
+											Название товара товара товара а товара товара
+										</a>
+										<div class="page-card__price">
+											<span class="page-card__price_sale"><span>1 500</span> р.</span>
+											<span class="page-card__price_starting"><span>1 700</span> р.</span>
+										</div>
+										<button type="button" class="page-card__add add">
+											<i class="icon icon_basket icon_basket_sm"></i>
+										</button>
+									</div>
+								</div>
+								<div class="page-card page-card_popular">
+									<div class="page-card__img">
+										<div class="page-card__popular popular"><i class="icon icon_like"></i></div>
+										<img class="img-fluid" src="img/page-card-img-1.jpg" alt="Картинка">
+										<div class="card-numb"><span class="card-numb__text">Код: <span>12345</span></span></div>
+									</div>
+									<div class="page-card__body">
+										<span class="page-card__vendor-code">Арт. <span>1234567890111213141516178</span></span>
+										<a href="#" class="page-card__name">
+											Название товара товара товара а товара товара
+										</a>
+										<div class="page-card__price">
+											<span class="page-card__price_sale"><span>1 500</span> р.</span>
+											<span class="page-card__price_starting"><span>1 700</span> р.</span>
+										</div>
+										<button type="button" class="page-card__add add">
+											<i class="icon icon_basket icon_basket_sm"></i>
+										</button>
+									</div>
+								</div>
+								<div class="page-card">
+									<div class="page-card__img">
+										<div class="page-card__popular popular"><i class="icon icon_like"></i></div>
+										<img class="img-fluid" src="img/page-card-img-1.jpg" alt="Картинка">
+										<div class="card-numb"><span class="card-numb__text">Код: <span>12345</span></span></div>
+									</div>
+									<div class="page-card__body">
+										<span class="page-card__vendor-code">Арт. <span>1234567890111213141516178</span></span>
+										<a href="#" class="page-card__name">
+											Название товара товара товара а товара товара
+										</a>
+										<div class="page-card__price">
+											<span class="page-card__price_sale"><span>1 500</span> р.</span>
+											<span class="page-card__price_starting"><span>1 700</span> р.</span>
+										</div>
+										<button type="button" class="page-card__add add">
+											<i class="icon icon_basket icon_basket_sm"></i>
+										</button>
+									</div>
+								</div>
+								<div class="page-card page-card_popular">
+									<div class="page-card__img">
+										<div class="page-card__popular popular"><i class="icon icon_like"></i></div>
+										<img class="img-fluid" src="img/page-card-img-1.jpg" alt="Картинка">
+										<div class="card-numb"><span class="card-numb__text">Код: <span>12345</span></span></div>
+									</div>
+									<div class="page-card__body">
+										<span class="page-card__vendor-code">Арт. <span>1234567890111213141516178</span></span>
+										<a href="#" class="page-card__name">
+											Название товара товара товара а товара товара
+										</a>
+										<div class="page-card__price">
+											<span class="page-card__price_sale"><span>1 500</span> р.</span>
+											<span class="page-card__price_starting"><span>1 700</span> р.</span>
+										</div>
+										<button type="button" class="page-card__add add">
+											<i class="icon icon_basket icon_basket_sm"></i>
+										</button>
+									</div>
+								</div>
+								<div class="page-card">
+									<div class="page-card__img">
+										<div class="page-card__popular popular"><i class="icon icon_like"></i></div>
+										<img class="img-fluid" src="img/page-card-img-1.jpg" alt="Картинка">
+										<div class="card-numb"><span class="card-numb__text">Код: <span>12345</span></span></div>
+									</div>
+									<div class="page-card__body">
+										<span class="page-card__vendor-code">Арт. <span>1234567890111213141516178</span></span>
+										<a href="#" class="page-card__name">
+											Название товара товара товара а товара товара
+										</a>
+										<div class="page-card__price">
+											<span class="page-card__price_sale"><span>1 500</span> р.</span>
+											<span class="page-card__price_starting"><span>1 700</span> р.</span>
+										</div>
+										<button type="button" class="page-card__add add">
+											<i class="icon icon_basket icon_basket_sm"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="row page-section">
+						<section class="col-12 col-sm-12">
+							<h2 class="page-h2">
+								<a href="#" class="page-h2__text"><i class="page-h2-icon">- </i>Статьи</a>
+								<div class="page-arrow-block catalog-articles-nav">
+									<button class="page-arrow catalog-articles-nav_left"><i class="icon icon_arrow-left"></i></button>
+									<button class="page-arrow catalog-articles_nav-right"><i class="icon icon_arrow-right"></i></button>
+								</div>
+							</h2>
+							<div class="catalog-articles slider-items owl-carousel owl-theme" data-snap-ignore="true">
+								<div class="slider-itm">
+									<div class="slider-itm__img">
+										<img class="img-fluid" src="img/articles-img-1.jpg" alt="Статья">
+									</div>
+									<h3 class="slider-itm__caption">
+										<a href="#">Посуда с антипригарным покрытием. Подготовка и уход.</a>
+									</h3>
+								</div>
+								<div class="slider-itm-itm">
+									<div class="slider-itm__img">
+										<img class="img-fluid" src="img/articles-img-2.jpg" alt="Статья">
+									</div>
+									<h3 class="slider-itm__caption">
+										<a href="#">Тест термосов: кто согреет меня лучше всех?</a>
+									</h3>
+								</div>
+								<div class="slider-itm-itm">
+									<div class="slider-itm__img">
+										<img class="img-fluid" src="img/articles-img-3.jpg" alt="Статья">
+									</div>
+									<h3 class="slider-itm__caption">
+										<a href="#">Luminarc. Качество, говорящее по французски.</a>
+									</h3>
+								</div>
+								<div class="slider-itm-itm">
+									<div class="slider-itm__img">
+										<img class="img-fluid" src="img/articles-img-2.jpg" alt="Статья">
+									</div>
+									<h3 class="slider-itm__caption">
+										<a href="#">Тест термосов: кто согреет меня лучше всех?</a>
+									</h3>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="for-customers">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="for-customers__content">
+							<h2 class="for-customers__caption">Постоянным клиентам</h2>
+							<a href="#" class="for-customers__btn btn-separator btn btn-primary">
+								<span class="btn-separator__text">Карты на скидку</span>
+								<div class="btn-separator__img"><i class="icon icon_sale"></i></div>
+							</a>
+							<a href="#" class="for-customers__btn btn-separator btn btn-primary">
+								<span class="btn-separator__text">Подарочные сертификаты</span>
+								<div class="btn-separator__img"><i class="icon icon_certificate"></i></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Импортируем footer-->
+	//= template/footer.html
+	<!--/Импортируем footer-->
+	</div>
+	<!--Импортируем header-->
+	//= template/header.html
+	<!--/Импортируем header-->
+	<!--Импортируем модальное окно-->
+	//= template/modal-feedback.html
+	<!--/Импортируем модальное окно-->
+<script src="js/main.js"></script>
+<script>
+
+	$( document ).ready(function() {
+		// инициализирую слайдер с большими картинками
+		$('.catalog-item-images_big').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			asNavFor: '.catalog-item-images_sm-carousel'
+		});
+
+		// инициализирую слайдер дополнительный с маленькими картинками, если их больше 3 появляются стрелки
+		$('.catalog-item-images_sm-carousel').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			asNavFor: '.catalog-item-images_big',
+			dots: false,
+			centerMode: true,
+			arrows: true,
+			prevArrow: '<button type="button" class="slick-prev"><i class="icon icon_arrow-left"></i></button>',
+			nextArrow: '<button type="button" class="slick-next"><i class="icon icon_arrow-right"></i></button>',
+			focusOnSelect: true,
+			responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: false,
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					arrows: false,
+					slidesToShow: 3
+				}
+			},
+			]
+		});
+
+		// слайдер "вы не забыли купить?"
+    	$('.catalog-more-items').owlCarousel({
+    		loop: true,
+		    margin:0,
+		    items:4,
+		    autoplay: false,
+		    dots: false,
+		    nav: false,
+		    responsiveClass:true,
+		    responsive:{
+		    	0:{
+		            items:1
+		        },
+		    	576:{
+		            items:2
+		        },
+		        768:{
+		            items:3
+		        },
+		        992:{
+		            items:4
+		        }
+		    }
+		});
+		//навигация слайдера "вы не забыли купить?"
+		$('.catalog-more-items-nav_left').click(function() {
+		    $('.catalog-more-items').trigger('next.owl.carousel');
+		});
+		$('.catalog-more-items-nav_right').click(function() {
+		    $('.catalog-more-items').trigger('prev.owl.carousel', [300]);
+		});
+
+		// слайдер со статьями
+    	$('.catalog-articles').owlCarousel({
+    		loop: true,
+		    margin:30,
+		    items:4,
+		    autoplay: false,
+		    dots: false,
+		    nav: false,
+		    responsiveClass:true,
+		    responsive:{
+		    	0:{
+		            items:1
+		        },
+		    	576:{
+		            items:2
+		        },
+		        768:{
+		            items:3
+		        },
+		        992:{
+		            items:4
+		        }
+		    }
+		});
+		//навигация слайдера с предложениями
+		$('.catalog-articles-nav_left').click(function() {
+		    $('.catalog-articles').trigger('next.owl.carousel');
+		});
+		$('.catalog-articles_nav-right').click(function() {
+			$('.catalog-articles').trigger('prev.owl.carousel', [300]);
+		});
+
+	});
+
+</script>
+
+</body>
+
+</html>

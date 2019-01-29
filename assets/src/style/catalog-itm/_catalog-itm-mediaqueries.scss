@@ -1,0 +1,25 @@
+@media (max-width: 1199px) {
+	.catalog-item-description__content {
+		flex-direction: column-reverse;
+	}
+	.catalog-item-main-info {
+		max-width: 100%;
+
+	}
+	.catalog-item-to-order {
+		max-width: none;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.catalog-item-carousel-container {
+		margin-bottom: 2rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.catalog-item-carousel-container {
+		margin-bottom: 2rem;
+	}
+}

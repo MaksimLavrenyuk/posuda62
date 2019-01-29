@@ -1,0 +1,24 @@
+.btn-separator {
+	display: flex;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 0;
+	align-items: center;
+}
+
+.btn-separator__text {
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.btn-separator__img {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid $white;
+	padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 12px;
+}

@@ -1,0 +1,23 @@
+.slider-itm {
+
+}
+
+.slider-itm__img {
+
+}
+
+.slider-itm__caption {
+	margin-top: 0.3125rem;
+	font-family: $font-family-secondary;
+	font-size: 1.125rem;
+	line-height: 1.2;
+	a {
+		color: $black;
+		&:hover, &:focus {
+			text-decoration: none;
+			color: $primary-hover;
+		}
+	}
+}
+
+

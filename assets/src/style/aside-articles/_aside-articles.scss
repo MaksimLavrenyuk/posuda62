@@ -1,0 +1,40 @@
+.aside-articles {
+
+}
+.aside-articles__caption {
+	color: $white;
+	font-weight: 500;
+	padding: 0.5rem 1.25rem;
+	z-index: 2;
+	position: relative;
+	background-color: rgb(27, 33, 43);
+	box-shadow: $box-shadow-fix-two;
+	margin-bottom: 0px;
+}
+
+
+
+.aside-articles-items {
+	background-color: $h-bg;
+	padding-top: 16px;
+}
+
+.aside-articles-itm {
+	padding: 1rem 1.25rem;
+}
+
+.aside-articles-itm__caption {
+	color: $black;
+	font-weight: 600;
+	text-decoration: underline;
+	margin-bottom: 0.2rem;
+	display: inline-block;
+}
+
+.aside-articles-itm__text {
+	font-size: 14px;
+}
+
+.aside-articles-itm__text{
+	margin-bottom: 0;
+}

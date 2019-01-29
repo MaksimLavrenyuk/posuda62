@@ -1,0 +1,106 @@
+<header id="header" class="header">
+    <div class="header-top-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-3 col-lg-6 col-sm-6 col-12">
+                    <span class="header-top-section__text">Интернет магазин посуды</span>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                    <div class="header-top-section-links">
+                        <a class="header-top-section__text" href="#">Доставка и оплата</a>
+                        <i class="icon icon_vertical-line"></i>
+                        <a class="header-top-section__text" href="#">Расширенный поиск</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-center-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-center-section__container" id="HeadFixedLine">
+                        <a href="/" class="logo">
+                            <img src="img/logo.png" alt="logo" class="logo img-fluid">
+                        </a>
+                        <ul class="dropfixed"></ul>
+                        <form action="search.php" class="header-search" method="post">
+                            <input type="text" class="header-search__input" placeholder="Поиск...">
+                            <div class="dropdown header-search-values">
+                                <button class="btn header-search-values__button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="header-search-btn__text">Товары</span> <i class="icon icon_arrow-down"></i>
+                                </button>
+                                <div class="dropdown-menu header-search-values__list" aria-labelledby="dropdownMenuButton">
+                                    <button type="button" class="dropdown-item header-search-values__item">Артикул</button>
+                                    <button type="button" class="dropdown-item header-search-values__item" href="#">Код</button>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary header-search__submit">
+                                <i class="icon icon_search"></i>
+                            </button>
+                        </form>
+                        <button type="button" class="toggler btn btn-primary mobile-btn">
+                            <i class="icon icon_burger"></i>
+                        </button>
+                        <a  href="tel:+74912284400" class="header-phone btn-primary btn-primary-strong">
+                            <span class="header-phone__text">28-44-00</span>
+                            <div class="header-phone__img">
+                                <i class="icon icon_phone"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom-section">
+        <div class="container">
+            <nav class="header-navbar navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto" id="navbarSupportedContentUl">
+                        <li class="nav-item dropdown" id="headerNavdropdown">
+                            <button class="btn nav-link header-navbar-dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <i class="icon icon_burger"></i>Каталог товаров
+                            </button>
+                            <div class="dropdown-menu header-navbar-dropdown__list" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#"><strong>Новинки</strong></a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#"><strong>Акции</strong></a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#">Сезонные товары</a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#">Барная продукция</a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#">Интерьер</a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#">Кухонные принадлежности</a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#">Посуда для напитков</a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#">Посуда для сервировки</a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#">Посуда для хранения</a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#">Посуда для приготовления</a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#">Столовые приборы</a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#">Текстиль</a>
+                                <a class="dropdown-item header-navbar-dropdown__item" href="#">Хозяйственные товары</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Список желаний (<span>0</span>)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-primary-strong" href="#">Войти</a>
+                        </li>
+                    </ul>
+                    <a href="#" id="basketBlock" class="nav-link btn header__basket basket">
+                        <span class="basket__name">Корзина</span>
+                        <div class="basket__img">
+                            <i id="iconBasket" class="icon icon_basket"></i>
+                            <span class="basket__numb">2</span>
+                        </div>
+                        <div class="basket__amount"><span>3000</span><span> руб.</span></div>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

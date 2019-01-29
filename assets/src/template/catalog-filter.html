@@ -1,0 +1,66 @@
+<div class="catalog-filter">
+	<h2 class="catalog-filter__caption">Фильтр</h2>
+	<form class="filter filter-form" autocomplete="off" method="post" action="filter.php">
+		<ul class="catalog-filter-content">
+			<li class="catalog-filter-content__item filter-item">
+				<div class="filter-btn-group">
+					<button data-filter="submit" type="submit" class="filter__btn btn btn-primary">Применить</button>
+					<button data-filter="reset" type="button" class="filter__btn filter__btn_white btn btn-primary">Сбросить фильтр</button>
+				</div>
+			</li>
+			<li class="catalog-filter-content__item filter-item filter-item_lg" data-snap-ignore="true">
+				<h5 class="filter-item__title">Цена товара:</h5>
+				<div class="filter-price-block">
+					<div class="filter-price-block__item">
+						<span class="filter-price-block__text">от:</span>
+						<input data-price="min" name="FilterPriceMin" autocomplete="off" type="text" class="filter-price-block__input" value="1000">
+					</div>
+					<div class="filter-price-block__item">
+						<span class="filter-price-block__text">до:</span>
+						<input data-price="max" name="FilterPriceMax" autocomplete="off" type="text" class="filter-price-block__input" value="60000">
+					</div>
+				</div>
+				<div class="filter-price-slider">
+					<div id="priceSlider"></div>
+				</div>
+			</li>
+			<li class="catalog-filter-content__item filter-item filter-item_sm">
+				<label class="filter-checkbox">	
+					<span class="filter-checkbox__text filter-checkbox__text_sm">Показывать только товар в наличии</span>
+				    <input type="checkbox" autocomplete="off">
+				    <span class="checked"></span>
+				</label>
+			</li>
+			<li class="catalog-filter-content__item filter-item filter-item_sm">
+				<div class="accordion" id="filterManufacturer">
+					<button class="btn filter-btn-accordion" type="button" data-toggle="collapse" data-target="#ManufacturerCollapse" aria-expanded="true" aria-controls="ManufacturerCollapse">
+						<h5 class="filter-item__title">Производитель</h5><i class="icon icon_arrow-down"></i>
+					</button>
+					<div id="ManufacturerCollapse" class="collapse" aria-labelledby="filterManufacturerHead" data-parent="#filterManufacturer">
+						
+					</div>
+				</div>
+			</li>
+			<li class="catalog-filter-content__item filter-item filter-item_sm">
+				<div class="accordion" id="filterMaterial">
+					<button class="btn filter-btn-accordion" type="button" data-toggle="collapse" data-target="#MaterialCollapse" aria-expanded="true" aria-controls="MaterialCollapse">
+						<h5 class="filter-item__title">Материал</h5><i class="icon icon_arrow-down"></i>
+					</button>
+					<div id="MaterialCollapse" class="collapse" aria-labelledby="MaterialHead" data-parent="#filterMaterial">
+						<ul class="filter-item-list">
+							<li class="filter-item-list__item">
+								<label class="filter-checkbox">	
+									<span class="filter-checkbox__text">Хрусталь</span>
+									<input type="checkbox" autocomplete="off">
+									<span class="checked"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</form>
+</div>
+
+

@@ -1,0 +1,79 @@
+// Страницы
+@import "index/index";
+@import "catalog/catalog";
+@import "catalog-itm/catalog-itm";
+
+
+//  Блоки
+@import "add/add";
+@import "popular/popular";
+@import "header/header";
+@import "footer/footer";
+@import "basket/basket";
+@import "page/page";
+@import "card-numb/card-numb";
+@import "list/list";
+@import "slider-itm/slider-itm";
+@import "for-customers/for-customers";
+@import "btn-separator/btn-separator";
+@import "mobile-menu/mobile-menu";
+@import "modal-feedback/modal-feedback";
+@import "breadcrumb/breadcrumb";
+@import "aside-articles/aside-articles";
+
+
+// Типографика
+@import "h1/h1";
+@import "h2/h2";
+
+// Иконки
+
+@import "icon/icon";
+
+
+.btn-primary-strong {
+    background-color: $primary-strong;
+}
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: $primary;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('../img/preloader.svg') no-repeat 50% 50%;
+    margin: -35px 0 0 -35px;
+}
+
+input,
+textarea {
+    transition: .3s;
+    border: 1px solid $border-grey;
+    &:focus {
+		border-color: #212121;
+		color: #212121;
+    	outline: 0;
+    }
+}
+
+
+
+.snap-drawers {
+
+}
+.snap-content {
+	background-image: url(../img/body-bg.png);
+
+}
+.btn-primary {
+	transition: $animation-time;
+}

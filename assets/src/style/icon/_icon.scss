@@ -1,0 +1,90 @@
+.icon {
+	display: block;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+.icon_vertical-line {
+	background-color: rgb(206, 206, 206);
+	width: 1px;
+  	height: 16px;
+}
+
+.icon_arrow-down {
+	width: 10px;
+	height: 5px;
+	background-image: url(../img/icon-arrow-down.png);
+}
+
+.icon_search {
+	width: 17px;
+	height: 17px;
+	background-image: url(../img/icon-search.png);
+}
+
+.icon_phone {
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/icon-phone.png);
+}
+
+.icon_burger {
+	width: 20px;
+	height: 12px;
+	background-image: url(../img/icon-burger.png);
+}
+
+.icon_basket {
+	width: 30px;
+	height: 28px;
+	background-image: url(../img/icon-basket.png);
+}
+
+.icon_basket_black {
+	width: 30px;
+	height: 28px;
+	background-image: url(../img/icon-basket-black.png);
+}
+
+.icon_arrow-right_white {
+	width: 8px;
+	height: 14px;
+	background-image: url(../img/icon-arrow-right-white.png);
+}
+
+.icon_arrow-left {
+	width: 9px;
+	height: 16px;
+	background-image: url(../img/icon-arrow-left.png);
+}
+.icon_arrow-right {
+	width: 9px;
+	height: 16px;
+	background-image: url(../img/icon-arrow-right.png);
+}
+.icon_like {
+	width: 13px;
+	height: 12px;
+	background-image: url(../img/icon-like.png);
+}
+
+.icon_sale {
+	width: 17px;
+	height: 24px;
+	background-image: url(../img/icon-sale.png);
+}
+
+.icon_certificate {
+	width: 16px;
+	height: 19px;
+	background-image: url(../img/icon-certificate.png);
+}
+
+
+.icon_arrow-on-top {
+	width: 30px;
+	height: 15px;
+	background-image: url(../img/arrow-on-top.png);
+	
+}

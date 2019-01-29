@@ -1,0 +1,16 @@
+.add {
+	background-color: $primary;
+	border: none;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: $animation-time;
+	cursor: pointer;
+	&:hover, &:focus {
+		transition: $animation-time;
+		background-color: $primary-hover;
+	}
+}

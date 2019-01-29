@@ -1,0 +1,42 @@
+@media (max-width: 1199px) {
+	.pagination .page-item {
+		margin-right: 0;
+		font-size: 0.75rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.catalog-itm {
+		max-width: calc(50% + 1px);
+		flex: 50% 1 1;
+	}
+	.catalog-nav__title {
+		display: none;
+	}
+	.catalog-nav__rignt {
+		display: none;
+	}
+	
+}
+
+@media (max-width: 575px) {
+	.catalog-itm {
+		flex: 100% 1 1;
+		max-width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+	.catalog-nav__left {
+		width: 100%;
+		nav {
+			width: 100%;
+		}
+		.pagination {
+			justify-content: space-between;
+		}
+	}
+	
+}
+
+

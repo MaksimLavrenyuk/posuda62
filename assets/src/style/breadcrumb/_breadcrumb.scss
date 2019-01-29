@@ -1,0 +1,10 @@
+.breadcrumb-item {
+	color: $black;
+	font-size: 0.875rem;
+	a {
+		color: $black;
+	}
+	&.active {
+		font-weight: bold;
+	}
+}
