@@ -47,7 +47,7 @@
 
 .logo {
 	img {
-		max-width: 380px;
+		max-width: 423px;
 	}
 }
 .logo__text {
@@ -64,7 +64,7 @@
 	margin-top: 3px;
 	margin-bottom: 3px;
 	display: flex;
-	max-width: 537px;
+	max-width: 490px;
 	width: 100%;
 	background-color: $white;
 }
@@ -245,8 +245,9 @@
 		display: none;
 	}
 	.header-center-section {
-		padding-top: 15px;
-		padding-bottom: 15px;
+		background-color: $primary;
+		padding-top: 6px;
+		padding-bottom: 6px;
 	}
 	.logo {
 		display: none;
@@ -274,14 +275,17 @@
 	.dropfixed {
 		margin-right: 35px;
 	}
+	.header-search__submit {
+		border-color: #cecece;
+	}
 }
 
 .header__basket_fixed {
 	.basket__name {
-		color: $black;
+		color: white;
 	}
 	.basket__amount {
-		color: $black;
+		color: white;
 	}
 }
 .dropfixed {

@@ -497,8 +497,8 @@
 					</a>
 				</div>
 			</div>
-			<div class="row page-section">
-				<section class="col-12 col-sm-12 col-md-6">
+			<div class="row">
+				<section class="col-12 page-section">
 					<h2 class="page-h2">
 						<a href="#" class="page-h2__text"><i class="page-h2-icon">- </i>Новости</a>
 						<div class="page-arrow-block index-news-nav">
@@ -523,9 +523,25 @@
 								<a href="#">Принимаем участие в HOUSEHOLD EXPO 2014</a>
 							</h3>
 						</div>
+						<div class="page-news-itm page-news-itm_sm">
+							<div class="page-news-itm__img">
+								<img class="img-fluid" src="img/index-news-img.jpg" alt="Новости">
+							</div>
+							<h3 class="page-news-itm__caption">
+								<a href="#">Принимаем участие в HOUSEHOLD EXPO 2014</a>
+							</h3>
+						</div>
+						<div class="page-news-itm page-news-itm_sm">
+							<div class="page-news-itm__img">
+								<img class="img-fluid" src="img/index-news-img.jpg" alt="Новости">
+							</div>
+							<h3 class="page-news-itm__caption">
+								<a href="#">Принимаем участие в HOUSEHOLD EXPO 2014</a>
+							</h3>
+						</div>
 					</div>
 				</section>
-				<section class="col-12 col-sm-12 col-md-6 index-mt-sm">
+				<section class="col-12  page-section index-mt-sm">
 					<h2 class="page-h2">
 						<a href="#" class="page-h2__text"><i class="page-h2-icon">- </i>Предложения</a>
 						<div class="page-arrow-block index-offers-nav">
@@ -534,6 +550,22 @@
 						</div>
 					</h2>
 					<div class="index-offers page-card-items owl-carousel owl-theme" data-snap-ignore="true">
+						<div class="page-news-itm page-news-itm_sm">
+							<div class="page-news-itm__img">
+								<img class="img-fluid" src="img/index-offers-img.jpg" alt="Новости">
+							</div>
+							<h3 class="page-news-itm__caption">
+								<a href="#">Подарки на рождество</a>
+							</h3>
+						</div>
+						<div class="page-news-itm page-news-itm_sm">
+							<div class="page-news-itm__img">
+								<img class="img-fluid" src="img/index-offers-img.jpg" alt="Новости">
+							</div>
+							<h3 class="page-news-itm__caption">
+								<a href="#">Подарки на рождество</a>
+							</h3>
+						</div>
 						<div class="page-news-itm page-news-itm_sm">
 							<div class="page-news-itm__img">
 								<img class="img-fluid" src="img/index-offers-img.jpg" alt="Новости">
@@ -685,7 +717,7 @@
     	$('.index-stock-items').owlCarousel({
     		loop: true,
 		    margin:0,
-		    items:4,
+		    items:3,
 		    autoplay: false,
 		    dots: false,
 		    nav: false,
@@ -701,7 +733,7 @@
 		            items:3
 		        },
 		        992:{
-		            items:4
+		            items:3
 		        }
 		    }
 		});
@@ -716,7 +748,7 @@
     	$('.index-new-items').owlCarousel({
     		loop: true,
 		    margin:0,
-		    items:4,
+		    items:3,
 		    autoplay: false,
 		    dots: false,
 		    nav: false,
@@ -732,7 +764,7 @@
 		            items:3
 		        },
 		        992:{
-		            items:4
+		            items:3
 		        }
 		    }
 		});
@@ -748,7 +780,7 @@
     	$('.index-news').owlCarousel({
     		loop: true,
 		    margin:28,
-		    items:2,
+		    items:4,
 		    autoplay: false,
 		    dots: false,
 		    nav: false,
@@ -759,6 +791,12 @@
 		        },
 		    	576:{
 		            items:2
+		        },
+		    	767:{
+		            items:3
+		        },
+		    	991:{
+		            items:4
 		        }
 		    }
 
@@ -776,7 +814,7 @@
     	$('.index-offers').owlCarousel({
     		loop: true,
 		    margin:28,
-		    items:2,
+		    items:4,
 		    autoplay: false,
 		    dots: false,
 		    nav: false,
@@ -787,6 +825,12 @@
 		        },
 		    	576:{
 		            items:2
+		        },
+		    	767:{
+		            items:3
+		        },
+		    	991:{
+		            items:4
 		        }
 		    }
 		});

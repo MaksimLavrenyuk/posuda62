@@ -36,8 +36,6 @@ $(document).ready(function() {
                     $('#HeadFixedLine').append(document.getElementById('basketBlock'));
                     $('.dropfixed').append(document.getElementById('headerNavdropdown'));
                     $basket.addClass('header__basket_fixed');
-                    $iconBasket.removeClass('icon_basket');
-                    $iconBasket.addClass('icon_basket_black');
 
                 } else {
                     headerBottomSection.show();
@@ -46,8 +44,7 @@ $(document).ready(function() {
                     $('#navbarSupportedContent').append(document.getElementById('basketBlock'));
                     $('#navbarSupportedContentUl').prepend(document.getElementById('headerNavdropdown'));
                     $basket.removeClass('header__basket_fixed');
-                    $iconBasket.addClass('icon_basket');
-                    $iconBasket.removeClass('icon_basket_black');
+
                 }
             }).on("resize", function() { // If the user resizes the window
                 winH = $(this).height(); // you'll need the new height value
