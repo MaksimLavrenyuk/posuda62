@@ -7,6 +7,9 @@
 	.page-content {
 		margin-top: 0px;
 	}
+	.page-card__img {
+		height: 220px;
+	}
 }
 @media (max-width: 767px) {
 	.page-about-info-block {
@@ -34,7 +37,11 @@
 	
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
+	.page-card__img {
+		height: 250px;
+	}
+
 	.page-h2__text {
 		font-size: 1.2rem;
 	}
